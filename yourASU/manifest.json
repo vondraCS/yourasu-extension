@@ -11,8 +11,8 @@
    "description": "yourASU: Full myASU customization",
    "host_permissions": [ "*://webapp4.asu.edu/*" ],
    "icons": {
-      "128": "assets/icons/yourasu-128.png",
-      "64": "assets/icons/yourasu-64.png",
-      "48": "assets/icons/yourasu-48.png"
+      "128": "assets/images/icons/icon-128.png",
+      "64": "assets/images/icons/icon-64.png",
+      "48": "assets/images/icons/icon-48.png"
    }
 }
