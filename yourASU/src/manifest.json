@@ -1,0 +1,18 @@
+{
+"manifest_version": 3,
+   "name": "yourASU",
+   "permissions": [ "storage" ],
+   "version": "0.1.0",
+
+   "action": {
+      "default_popup": "src/popup/popup.html"
+   },
+   
+   "description": "yourASU: Full myASU customization",
+   "host_permissions": [ "*://webapp4.asu.edu/*" ],
+   "icons": {
+      "128": "assets/icons/yourasu-128.png",
+      "64": "assets/icons/yourasu-64.png",
+      "48": "assets/icons/yourasu-48.png"
+   }
+}
