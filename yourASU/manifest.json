@@ -1,18 +1,24 @@
 {
-"manifest_version": 3,
+   "manifest_version": 3,
    "name": "yourASU",
    "permissions": [ "storage" ],
    "version": "0.1.0",
 
    "action": {
-      "default_popup": "src/popup/popup.html"
+      "default_popup": "popup.html",
+      "default_icons": {
+         "128": "assets/images/icons/icon-128.png",
+         "64": "assets/images/icons/icon-64.png",
+         "48": "assets/images/icons/icon-48.png"
+      }
    },
    
    "description": "yourASU: Full myASU customization",
    "host_permissions": [ "*://webapp4.asu.edu/*" ],
+   
    "icons": {
-      "128": "assets/images/icons/icon-128.png",
-      "64": "assets/images/icons/icon-64.png",
-      "48": "assets/images/icons/icon-48.png"
+      "128": "src/assets/images/icons/icon-128.png",
+      "64": "src/assets/images/icons/icon-64.png",
+      "48": "src/assets/images/icons/icon-48.png"
    }
 }

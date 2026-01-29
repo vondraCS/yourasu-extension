@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yourASU</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icons/favicon.ico"
+      type="image/flavicon.ico"
+    />
+    <link rel="stylesheet" href="./src/css/popup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Noto+Sans+Hebrew:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="">
+    <div class="popup-container">
+      <div class="side-margins2 left-to-right">
+        <h1 class="header-font">yourASU</h1>
+      </div>
+      <div class="body-container">
+        <div class="themes-container flex-list">
+          <h2 class="subheading-font">Themes</h2>
+          <div class="centered">
+            <p class="body-font">Chosen theme:</p>
+            <p class="subbody-font" id="chosen-theme-display">None</p>
+          </div>
+
+          <div class="theme-slot flex-row left-to-right">
+            <p class="body-font">Default</p>
+            <div class="spacer"></div>
+            <input
+              type="checkbox"
+              class="theme-checkbox"
+              value="default"
+              data-label="Default"
+            />
+          </div>
+          <div class="theme-slot flex-row left-to-right">
+            <p class="body-font">Dark Mode</p>
+            <div class="spacer"></div>
+            <input
+              type="checkbox"
+              class="theme-checkbox"
+              value="dark-mode"
+              data-label="Dark Mode"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/js/choosetheme.js"></script>
+  </body>
+</html>

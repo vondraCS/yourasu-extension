@@ -1,10 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+body {
+  background-color: maroon;
+  width: fit-content;
+}
+
+.side-margins1 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.side-margins2 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .header-font {
   font-family: "Noto Sans Hebrew", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+
+.subheading-font {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.6rem;
 }
 
 .body-font {
@@ -12,5 +43,75 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.25rem;
+}
+
+.subbody-font {
+  font-family: "Familjen Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
   font-size: 1rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.flex-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.left-to-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.rows-on-left {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.transparent {
+  background-color: oklab(0 0 0/0.03);
+  backdrop-filter: blur(8px);
+}
+
+.popup-container {
+  aspect-ratio: 0.75;
+  width: 290px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 5px;
+  padding-top: 5%;
+}
+
+.body-container {
+}
+
+.themes-container {
+  gap: 10px;
+}
+
+.theme-slot {
+  width: 80%;
+}
+
+.spacer {
+  width: 100%;
 }
