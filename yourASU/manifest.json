@@ -20,5 +20,11 @@
       "128": "src/assets/images/icons/icon-128.png",
       "64": "src/assets/images/icons/icon-64.png",
       "48": "src/assets/images/icons/icon-48.png"
-   }
+   },
+
+   "content_scripts": [{
+      "matches": ["*://webapp4.asu.edu/*"],
+      "js": ["src/js/customization.js"],
+      "type": "module"
+   }]
 }
