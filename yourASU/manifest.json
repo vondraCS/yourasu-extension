@@ -25,6 +25,7 @@
    "content_scripts": [{
       "matches": ["*://webapp4.asu.edu/*"],
       "js": ["src/js/customization.js"],
+      "css": ["src/css/inject.css"],
       "type": "module"
    }]
 }

@@ -17,38 +17,253 @@
       rel="stylesheet"
     />
   </head>
-  <body class="">
+  <body>
     <div class="popup-container">
-      <div class="side-margins2 left-to-right">
-        <h1 class="header-font">yourASU</h1>
+      <div style="margin-bottom: 15px" class="left-to-right spaced-out">
+        <div class="side-margins2 left-to-right">
+          <h1 class="header-font">yourASU</h1>
+        </div>
+        <div class="centered">
+          <p class="body-font">Chosen theme:</p>
+          <p class="subbody-font" id="chosen-theme-display">None</p>
+        </div>
       </div>
-      <div class="body-container">
+      <div class="body-container left-to-right">
         <div class="themes-container flex-list">
-          <h2 class="subheading-font">Themes</h2>
-          <div class="centered">
-            <p class="body-font">Chosen theme:</p>
-            <p class="subbody-font" id="chosen-theme-display">None</p>
-          </div>
+          <!--<h2 class="subheading-font">Themes</h2>/!-->
 
-          <div class="theme-slot flex-row left-to-right">
-            <p class="body-font">Default</p>
-            <div class="spacer"></div>
+          <div
+            id="default"
+            class="theme-slot flex-row left-to-right spaced-out"
+          >
+            <p class="body-font fontcolor2">Default</p>
             <input
-              type="checkbox"
-              class="theme-checkbox"
+              type="radio"
+              name="theme-radio"
+              class="theme-radio"
               value="default"
               data-label="Default"
             />
           </div>
-          <div class="theme-slot flex-row left-to-right">
-            <p class="body-font">Dark Mode</p>
-            <div class="spacer"></div>
+          <div
+            id="dark-mode"
+            class="theme-slot flex-row left-to-right spaced-out"
+          >
+            <p class="body-font fontcolor2">Dark Mode</p>
             <input
-              type="checkbox"
-              class="theme-checkbox"
+              type="radio"
+              name="theme-radio"
+              class="theme-radio"
               value="dark-mode"
               data-label="Dark Mode"
             />
+          </div>
+          <div
+            id="beach-day"
+            class="theme-slot flex-row left-to-right spaced-out"
+          >
+            <p class="body-font fontcolor2">Beach Day</p>
+            <input
+              type="radio"
+              name="theme-radio"
+              class="theme-radio"
+              value="beach-day"
+              data-label="Beach Day"
+            />
+          </div>
+          <div id="nature" class="theme-slot flex-row left-to-right spaced-out">
+            <p class="body-font fontcolor2">Nature</p>
+            <input
+              type="radio"
+              name="theme-radio"
+              class="theme-radio"
+              value="nature"
+              data-label="Nature"
+            />
+          </div>
+          <div id="rustic" class="theme-slot flex-row left-to-right spaced-out">
+            <p class="body-font fontcolor2">Rustic</p>
+            <input
+              type="radio"
+              name="theme-radio"
+              class="theme-radio"
+              value="rustic"
+              data-label="Rustic"
+            />
+          </div>
+          <div id="apple" class="theme-slot flex-row left-to-right spaced-out">
+            <p class="body-font fontcolor2">Apple</p>
+            <input
+              type="radio"
+              name="theme-radio"
+              class="theme-radio"
+              value="apple"
+              data-label="Apple"
+            />
+          </div>
+          <div id="custom" class="theme-slot flex-row left-to-right spaced-out">
+            <p class="body-font fontcolor2">Custom</p>
+            <input
+              type="radio"
+              name="theme-radio"
+              class="theme-radio"
+              value="custom"
+              data-label="Custom"
+            />
+          </div>
+        </div>
+        <div class="custom-container centered">
+          <div
+            class="inner-custom-container scroller"
+            style="overflow-y: scroll; overflow-x: hidden"
+          >
+            <div>
+              <p class="body-font">Background</p>
+              <div
+                class="flex-list"
+                style="
+                  padding-left: 8px;
+                  padding-bottom: 2px;
+                  gap: 2px;
+                  align-items: flex-start;
+                "
+              >
+                <div class="option left-to-right spaced-out">
+                  <div class="left-to-right" style="gap: 3px">
+                    <input
+                      type="radio"
+                      name="background-radio"
+                      id="background-color-radio"
+                      class="background-radio radio-input"
+                      value="color"
+                    />
+                    <p>Color</p>
+                  </div>
+
+                  <input
+                    type="color"
+                    id="background-color-input"
+                    class="color-input"
+                    value="#8C1D40"
+                  />
+                </div>
+
+                <div class="option left-to-right spaced-out">
+                  <div class="left-to-right" style="gap: 3px">
+                    <input
+                      type="radio"
+                      name="background-radio"
+                      id="background-url-radio"
+                      class="background-radio radio-input"
+                      value="image"
+                    />
+                    <p>Image</p>
+                  </div>
+
+                  <input
+                    type="url"
+                    id="background-url-input"
+                    class="url-input"
+                    placeholder="https://imagelink.com/..."
+                    style="border: 1px solid #000; width: 60%"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="body-font">Boxes</p>
+              <div
+                class="flex-list"
+                style="
+                  padding-left: 8px;
+                  padding-bottom: 2px;
+                  gap: 2px;
+                  align-items: flex-start;
+                "
+              >
+                <div class="option left-to-right spaced-out">
+                  <p>Round</p>
+
+                  <input
+                    type="range"
+                    id="roundness-input"
+                    class="range-input"
+                    min="0"
+                    max="55"
+                  />
+                </div>
+
+                <div class="option left-to-right spaced-out">
+                  <p>Color</p>
+
+                  <input
+                    type="color"
+                    id="box-color-input"
+                    class="color-input"
+                    value="#8C1D40"
+                  />
+                </div>
+                <div class="option left-to-right spaced-out">
+                  <p>Outline</p>
+
+                  <input
+                    type="color"
+                    id="box-outline-color-input"
+                    class="color-input"
+                    value="#8C1D40"
+                  />
+                </div>
+                <div class="option left-to-right spaced-out">
+                  <p>Transparency</p>
+                  <input
+                    type="range"
+                    id="box-transparency-input"
+                    class="range-input"
+                    min="0"
+                    max="100"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="body-font">Header</p>
+              <div
+                class="flex-list"
+                style="
+                  padding-left: 8px;
+                  padding-bottom: 2px;
+                  gap: 2px;
+                  align-items: flex-start;
+                "
+              >
+                <div
+                  class="option left-to-right"
+                  style="justify-content: space-between"
+                >
+                  <p>Color</p>
+
+                  <input
+                    type="color"
+                    id="header-color-input"
+                    class="color-input"
+                    value="#8C1D40"
+                  />
+                </div>
+                <div
+                  class="option left-to-right"
+                  style="justify-content: space-between"
+                >
+                  <p>Navbar Color</p>
+
+                  <input
+                    type="color"
+                    id="navbar-color-input"
+                    class="color-input"
+                    value="#8C1D40"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
